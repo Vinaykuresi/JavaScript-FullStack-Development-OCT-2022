@@ -1,24 +1,75 @@
+
+<!-- DTD -> Document type definition -> HTML5 -->
+<!-- Container for various HTML Elements -->
 <!DOCTYPE html>
 
+    <!-- container for various metadata content -->
     <head>
-        <title>HTML Introduction</title>
+
+        <!-- defines the title of the document in the browser toolbar -->
+        <title>HTML Introduciton classes</title>
+
+        <!-- used for serach engine optimization : by providing additional important information -->
+        <meta name="keywords" content="HTML Tutorials" >
+        <meta name="author" content="Vinay Kumar kuresi" >
     </head>
+
+    <!-- contianer for all the content of an html document-->
     <body>
-        <h3>Difference between Block and Inline Elements</h3>
 
-        <div>
-            This is example for Block level Elements : <br/>
-            <p>This is First Paragraph 1</p>
-            <p>This is First Paragraph 2</p>
-            <p>This is First Paragraph 3</p>
-        </div>
+        <!-- html attributes -->
 
-        <div>
-            This is example for Inline level Elements : <br/>
-            <span>This is First Paragraph 1</span>
-            <span>This is First Paragraph 2</span>
-            <span>This is First Paragraph 3</span>
+        <!-- this form is for user registration -->
+        <!-- forms are used for collecting user information -->
+        <form name="registration" action="./result.html" method="get">
+            <div>
+
+                <!-- specifies an input feild used inside a form, where user can enter the data -->
+
+                <!-- creates a string input field -->
+                <input type="text" placeholder="Username" />
+                
+                <!-- insert a line break -->
+                <br />
+                <!-- comments -->
+
+                <!-- creates a password input field in masked format -->
+                <input type="password" placeholder="Password" />
+
+                <!-- creates a radio group -->
+                <div>
+                    <label for="male">Male</label> <input type="radio" id="male" name="registration" value="male" />
+                    <label for="female">Female</label> <input type="radio" id="female" name="registration" value="female" />
+                </div>
+
+                <div>
+                    <input type="checkbox">Agree Company Policy</input><br />
+                    <input type="checkbox">Use this information for futher logins</input>
+                </div>
+            
+                <!-- button -->
+                <div>
+                    <input type="submit" value="Submit"/>
+                    <input type="reset" value="Reset"/>
+                    <!-- <input type="button" value="button"/> -->
+                </div>
+
+            </div>
+
+            <!-- <button type="submit">Submit</button> -->
+        </form>
+
+        <!-- <div>
+            Starts on new line <br/>
+            <p>This is Paragraph 1</p>
+            <p>This is Paragraph 2</p>
+            <p>This is Paragraph 3</p>
         </div>
+        <div>
+            Starts on new line <br/>
+            <span>This is Paragraph 1</span>
+            <span>This is Paragraph 2</span>
+            <span>This is Paragraph 3</span>
+        </div> -->
     </body>
-
 </html>
