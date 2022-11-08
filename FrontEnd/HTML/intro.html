@@ -1,34 +1,37 @@
-
 <!-- DTD -> Document type definition -> HTML5 -->
 <!-- Container for various HTML Elements -->
 <!DOCTYPE html>
 
-    <!-- container for various metadata content -->
-    <head>
+<!-- container for various metadata content -->
 
-        <!-- defines the title of the document in the browser toolbar -->
-        <title>HTML Introduciton classes</title>
+<head>
 
-        <!-- used for serach engine optimization : by providing additional important information -->
-        <meta name="keywords" content="HTML Tutorials" >
-        <meta name="author" content="Vinay Kumar kuresi" >
-    </head>
+    <!-- defines the title of the document in the browser toolbar -->
+    <title>HTML Introduciton classes</title>
 
-    <!-- contianer for all the content of an html document-->
-    <body>
+    <!-- used for serach engine optimization : by providing additional important information -->
+    <meta name="keywords" content="HTML Tutorials">
+    <meta name="author" content="Vinay Kumar kuresi">
+</head>
 
-        <!-- html attributes -->
+<!-- contianer for all the content of an html document-->
 
-        <!-- this form is for user registration -->
-        <!-- forms are used for collecting user information -->
-        <form name="registration" action="./result.html" method="get">
+<body>
+
+    <!-- html attributes -->
+
+    <!-- this form is for user registration -->
+    <!-- forms are used for collecting user information -->
+    <center>
+        <form name="registration" action="./result.html" method="get" style="border: 2px dotted; position: absolute; top: 25%; left: 25%;">
             <div>
 
                 <!-- specifies an input feild used inside a form, where user can enter the data -->
 
                 <!-- creates a string input field -->
-                <input type="text" placeholder="Username" />
-                
+                <label for="username">Username : </label><input id="username" type="text" size="15" maxlength="10"
+                    minlength="8" placeholder="Username" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" />
+
                 <!-- insert a line break -->
                 <br />
                 <!-- comments -->
@@ -39,27 +42,56 @@
                 <!-- creates a radio group -->
                 <div>
                     <label for="male">Male</label> <input type="radio" id="male" name="registration" value="male" />
-                    <label for="female">Female</label> <input type="radio" id="female" name="registration" value="female" />
+                    <label for="female">Female</label> <input type="radio" id="female" name="registration"
+                        value="female" />
                 </div>
 
                 <div>
                     <input type="checkbox">Agree Company Policy</input><br />
                     <input type="checkbox">Use this information for futher logins</input>
                 </div>
-            
+
+                <div>
+                    <input type="date" required />
+                    <input type="email" />
+                    <input type="file" accept="application/pdf,application/vnd.ms-excel" />
+                </div>
+
+                <div>
+                    <label for="degree">Degree : </label>
+                    <select size="1" id="degree">
+                        <option>Btech</option>
+                        <option>Bsc</option>
+                        <option>BCA</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="description">Description</label><br />
+                    <textarea id="description" rows="5" cols="50">
+
+                    </textarea>
+                </div>
+
                 <!-- button -->
                 <div>
-                    <input type="submit" value="Submit"/>
-                    <input type="reset" value="Reset"/>
+                    <!-- <input type="submit" value="Submit"/>
+                    <input type="reset" value="Reset"/> -->
                     <!-- <input type="button" value="button"/> -->
+                </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
                 </div>
 
             </div>
 
             <!-- <button type="submit">Submit</button> -->
         </form>
+    </center>
 
-        <!-- <div>
+    <!-- <div>
             Starts on new line <br/>
             <p>This is Paragraph 1</p>
             <p>This is Paragraph 2</p>
@@ -71,5 +103,6 @@
             <span>This is Paragraph 2</span>
             <span>This is Paragraph 3</span>
         </div> -->
-    </body>
+</body>
+
 </html>

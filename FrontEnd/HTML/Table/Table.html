@@ -1,0 +1,61 @@
+<!-- 
+
+    Table : two dimensional structure.
+
+        1) Rows
+        2) Columns
+
+    table -> create the table
+    thead -> create the header 
+    tbody -> defined table content 
+    th -> define each column name 
+    tr -> each row 
+    td -> each cell in a row
+
+ -->
+<html>
+    <thead>
+        <title>Employee Login</title>
+    </thead>
+    <tbody>
+        
+        <form style="position: absolute; top: 25%; left: 25%;">
+            <h3>Employee Login</h3>
+            <table border="2px solid black">
+                <thead>
+                    <tr>
+                        <th>
+                            Employee Details
+                        </th>
+                        <th>
+                            Enter here
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Employee User Id</td>
+                        <td><input type="text" size="30" /></td>
+                    </tr>
+                    <tr>
+                        <td>Employee password</td>
+                        <td><input type="password" size="30" /></td>
+                    </tr>
+                    <tr>
+                        <td><button type="button">Generate OTP</button></td>
+                        <td><button type="reset">Reset Fields</button></td>
+                    </tr>
+                    <tr>
+                        <td>Enter the OTP</td>
+                        <td><input type="text" size="30" /></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Submit OTP</button></td>
+                        <td><button type="reset">Reset OTP</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </tbody>
+
+</html>
