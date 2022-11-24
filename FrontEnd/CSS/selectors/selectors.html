@@ -5,6 +5,12 @@
 <head>
     <title>Selectors</title>
     <style>
+
+        /* Universal Selector */
+        *{
+            font-family: cursive;
+        }
+
         /* id selector */
         #para1 {
             color: red;
@@ -23,6 +29,60 @@
         /* contextual selector */
         div h4{
             color: chartreuse;
+        }
+
+        /* grouping of selectors */
+        h3, h4{
+            /* font-style: italic; */
+        }
+
+        /* pseudo-classes */
+        a:hover{
+            background-color: black;
+            color: white;
+            font-weight: 800;
+        }
+
+        a:visited{
+            color: yellow;
+        }
+
+        h3:first-letter{
+            font-size: 200%;
+        }
+
+        /* pseudo-elements */
+        input::placeholder{
+            color: red;
+        }
+
+        /* Relational Selectors */
+        /* direct child */
+        div > h4 {
+            font-style: italic;
+        }
+
+        /* adjacent sibling */
+        h3+h4{
+            font-size: 100%;
+        }
+
+        /* general sibling */
+        h3~h4{
+            /* font-size: 200%; */
+        }
+
+        /* attribute selector */
+        /* attribute selector */
+        input[type="text"]{
+            /* background-color: lightblue; */
+            width: 550px;
+        }
+
+        input[type="button"]{
+            background-color: green;
+            color: white;
+            width: 120px;
         }
     </style>
 </head>
@@ -50,6 +110,17 @@
         <h3>This is CSS</h3>
         <h4>Css is used for Styling the Web page</h4>
         <h4>Contextual Selector</h4>
+        <section style="margin-left: 10%;">
+            <h3>This is Sub CSS</h3>
+            <h4>Sub Css is used for Styling the Web page</h4>
+            <h4>Sub Contextual Selector</h4>
+        </section>
+        <a href="https://www.google.co.in/">Google</a>
+    </div>
+
+    <div>
+        <input type="text" placeholder="Enter the Username..."/><br/>
+        <input type="button" value="Submit" />
     </div>
 </body>
 

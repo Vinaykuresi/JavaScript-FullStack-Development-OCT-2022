@@ -1,0 +1,37 @@
+<!-- selectors -->
+
+<html>
+
+<head>
+    <title>Presedence of Selectors</title>
+    <style>
+
+        /* presedence of selectors */
+
+        /* 
+            1. ID > Class
+            2. Class > Type(Element)
+
+            ID > Class > Type
+        */
+        #Pid{
+            background-color: red;
+        }
+
+        .pClass{
+            background-color: yellow;
+            color: aqua;
+        }
+
+        p{
+            color: orange;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="pClass" id="pId">This is Paragraph</p>
+</body>
+
+</html>
