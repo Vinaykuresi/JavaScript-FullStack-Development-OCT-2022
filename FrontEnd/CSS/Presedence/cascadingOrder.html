@@ -1,0 +1,30 @@
+<!-- selectors -->
+
+<html>
+
+<head>
+    <title>Cascading Order (Specificity)</title>
+    <style>
+
+         /* 200  */
+        #cId #pId  {
+            color: red;
+        }
+
+        /* 122 */
+        div.container p#pId.pClass {
+            color: green !important;
+        }
+
+        /* 200 > 122 */
+
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cId">
+        <p class="pClass" id="pId">This is Paragraph</p>
+    </div>
+</body>
+
+</html>

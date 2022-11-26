@@ -1,0 +1,65 @@
+<!-- 
+    position  :
+
+        top,
+        right, 
+        bottom, 
+        left
+
+ -->
+
+ <!-- Position Properties : 
+
+        1. Static
+        2. Relative
+        3. Absolute
+        4. Fixed        
+-->
+
+<html>
+    <head>
+        <title>Position Properties</title>
+        <style>
+            div{
+                border: 1px solid black;
+                height: 100px;
+                padding: 5px;
+                width: 200px;
+            }
+
+            #staticPos{
+                background-color: pink;
+                left: 10px;
+                position: static;
+                top: 100px;
+            }
+
+            #fixedPos{
+                background-color: lightblue;
+                left: 100px;
+                position: relative;
+                top: 200px;
+            }
+
+            #relativePos{
+                background-color: lightgreen;
+                left: 50px;
+                position: relative;
+                top: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="staticPos">
+            This div is statically positioned. The Left, Right, Top and Bottom values will have no effect.
+        </div>
+        <div id="fixedPos">
+            This div has a fixed positioned. This div is positioned relative to the viewport.
+            The element doesn't change its position when scrolled
+        </div>
+        <div id="relativePos">
+            This div is positioned relatively.
+            The left, right, top, bottom values will be applied relative to the element itself.
+        </div>
+    </body>
+</html>

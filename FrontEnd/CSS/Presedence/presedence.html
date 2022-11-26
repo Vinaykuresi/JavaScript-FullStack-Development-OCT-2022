@@ -5,7 +5,6 @@
 <head>
     <title>Presedence of Selectors</title>
     <style>
-
         /* presedence of selectors */
 
         /* 
@@ -14,24 +13,35 @@
 
             ID > Class > Type
         */
-        #Pid{
+        #pId {
             background-color: red;
         }
 
-        .pClass{
+        .pClass {
             background-color: yellow;
             color: aqua;
         }
 
-        p{
+        p {
             color: orange;
             font-style: italic;
+        }
+
+        .container{
+            color: blue;
+        }
+
+        .container #PId {
+            background-color: green;
         }
     </style>
 </head>
 
 <body>
-    <p class="pClass" id="pId">This is Paragraph</p>
+    <div class="container">
+        This is Div Container
+        <p class="pClass" id="pId">This is Paragraph</p>
+    </div>
 </body>
 
 </html>
