@@ -1,0 +1,113 @@
+
+<html>
+    <head>
+        <title>Flexbox</title>
+        <style>
+
+            /* flex container properties */
+            .flex-container{
+                display: flex;
+                flex-direction: row;
+                /* align-items: center; */
+                /* align-content: space-around; */
+                /* justify-content: center; */
+                /* height: 500px; */
+                /* justify-content: space-between; */
+
+                /* flex-wrap: wrap; */
+                /* flex-wrap: wrap-reverse; */
+                background-color: lightgray;
+            }
+
+            .flex-container > div{
+                background-color: blanchedalmond;
+                margin: 10px;
+                padding: 5px;
+                font-size: 20px;
+                width: calc(100px + 50px);
+                /* flex-grow: 50px; */
+                /* flex-shrink: 0; */
+                /* flex-basis: 30px; */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- container -->
+        <div class="flex-container">
+            <!-- elements -->
+            <div>
+                <h3>Heading 1</h3>
+                <p>Text 1</p>
+            </div>
+            <div>
+                <h3>Heading 2</h3>
+                <p>Text 2</p>
+            </div>
+            <div style="flex-shrink: 0; width: 200px;">
+                <h3>Heading 3</h3>
+                <p>Text 3</p>
+            </div>
+            <div>
+                <h3>Heading 1</h3>
+                <p>Text 1</p>
+            </div>
+            <div>
+                <h3>Heading 2</h3>
+                <p>Text 2</p>
+            </div>
+            <div>
+                <h3>Heading 3</h3>
+                <p>Text 3</p>
+            </div>
+            <!-- <div>
+                <h3>Heading 1</h3>
+                <p>Text 1</p>
+            </div>
+            <div>
+                <h3>Heading 2</h3>
+                <p>Text 2</p>
+            </div>
+            <div>
+                <h3>Heading 3</h3>
+                <p>Text 3</p>
+            </div>
+            <div>
+                <h3>Heading 1</h3>
+                <p>Text 1</p>
+            </div> -->
+            <!-- <div>
+                <h3>Heading 2</h3>
+                <p>Text 2</p>
+            </div>
+            <div>
+                <h3>Heading 3</h3>
+                <p>Text 3</p>
+            </div>
+            <div>
+                <h3>Heading 1</h3>
+                <p>Text 1</p>
+            </div>
+            <div>
+                <h3>Heading 2</h3>
+                <p>Text 2</p>
+            </div>
+            <div>
+                <h3>Heading 3</h3>
+                <p>Text 3</p>
+            </div>
+            <div>
+                <h3>Heading 1</h3>
+                <p>Text 1</p>
+            </div>
+            <div>
+                <h3>Heading 2</h3>
+                <p>Text 2</p>
+            </div>
+            <div>
+                <h3>Heading 3</h3>
+                <p>Text 3</p>
+            </div> -->
+
+        </div>
+    </body>
+</html>
