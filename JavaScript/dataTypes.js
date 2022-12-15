@@ -43,4 +43,11 @@ num = 10 + 20.10
 console.log("Data Type of Num : ", typeof(num))
 console.log("NUm : ", num)
 
+// undefined
+var custName = undefined
+console.log(custName)
+console.log(typeof(custName))
+
+
+
 
